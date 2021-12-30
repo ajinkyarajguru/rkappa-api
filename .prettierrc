@@ -2,5 +2,6 @@
     "singleQuote": false,
     "tabWidth": 2,
     "trailingComma": "es5",
-    "arrowParens": "always"
+    "arrowParens": "always",
+    "useTabs": false
 }
