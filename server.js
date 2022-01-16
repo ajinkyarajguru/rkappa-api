@@ -11,20 +11,13 @@ dbCon.connectToServer((err) => {
     }
 })
 
-
-router.route()
-
 router.get('/award', async function (req, res) {
     const dbConnect = dbCon.getDb();
     const data = dbConnect
         .collection("people").insert({ name: 'Ajinkya Rajguru' });
-
-
     data.then(result => console.log(result))
     res.send("Success")
 });
-
-
 
 app.get('/award', router);
 
