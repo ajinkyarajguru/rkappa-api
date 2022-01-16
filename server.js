@@ -1,7 +1,10 @@
 var express = require('express');
+const cors = require('cors');
 const db = require('./db');
 var dbCon = require('./db');
 var app = express();
+app.use(cors());
+app.options('*', cors());
 
 const router = express.Router();
 
